@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Digital Tasbih</title>
 </head>
@@ -31,7 +30,7 @@
                 <div class="p-6">
                     <h5
                         class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        Subhan Allah
+                        سبحان الله     <br>  Subhan Allah <br> সুবহানাল্লাহ 
                     </h5>
                     <p id="subhanAllahDisplay"
                         class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased">
@@ -60,7 +59,7 @@
                 <div class="p-6">
                     <h5
                         class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        Alhamdulilah
+                        الحمد لله  <br> আলহামদুলিল্লাহ <br>   Alhamdulilah
                     </h5>
                     <p id="alhamdulillahDisplay"
                         class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased">
@@ -80,15 +79,15 @@
                     </button>
                 </div>
             </div>
-             <!-- AlhamdulillahContainer End -->
+            <!-- AlhamdulillahContainer End -->
 
-              <!-- AllahuakberContainer Start -->
+            <!-- AllahuakberContainer Start -->
             <div
                 class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div class="p-6">
                     <h5
                         class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                        Allahuakber
+                          الله أكبر <br>আল্লাহু আকবর <br> Allahuakber
                     </h5>
                     <p id="allahAkberDisplay"
                         class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased">
@@ -108,10 +107,68 @@
                     </button>
                 </div>
             </div>
-             <!-- AlhamdulillahContainer End -->
+            <!--  AllahuakberContainer End -->
+
+            <!--  Astaghfirullah start -->
+            <div
+                class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                <div class="p-6">
+                    <h5
+                        class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                        ستغفر الله <br> আস্তাগফিরল্লাহ <br>   Astaghfirullah
+                    </h5>
+                    <p id="AstaghfirullahDisplay"
+                        class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased">
+                        0
+                    </p>
+                    <div class="p-[0.5rem] pt-0">
+                        <button id="AstaghfirullahIncrimentBtn"
+                        class="select-none rounded-lg bg-green-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none m-5"
+                        type="button" data-ripple-light="true">
+                        Incriment
+                        </button>
+                        <button id="AstaghfirullahDecrimentBtn"
+                        class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button" data-ripple-light="true">
+                        Decriment
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <!-- Astaghfirullah end -->
+                
+
+                <!-- Allahumma ajirni minan nar start -->
+
+                <div
+                class="relative flex w-full text-center flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                <div class="p-6">
+                    <h5
+                        class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                        اللهم أجرني من النار  <br>  আল্লাহুম্মা আজিরনি মিনান নার <br> Allahumma ajirni minan nar
+                    </h5>
+                    <p id="AllahummaDisplay"
+                        class="block text-4xl font-sans font-light leading-relaxed text-inherit antialiased">
+                        0
+                    </p>
+                    <div class="p-[0.5rem] pt-0">
+                        <button id="AllahummaIncrimentBtn"
+                        class="select-none rounded-lg bg-green-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none m-5"
+                        type="button" data-ripple-light="true">
+                        Incriment
+                        </button>
+                        <button id="AllahummaDecrimentBtn"
+                        class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button" data-ripple-light="true">
+                        Decriment
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <!-- Allahumma ajirni minan nar end -->
         </section>
 
-         <!-- ResetContainer Start -->
+        <!-- ResetContainer Start -->
         <div class="resetContainer lg:mt-10 mt-5 flex justify-center">
             <button id="resetBtn"
                 class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -119,7 +176,7 @@
                 Reset All Tasbih
             </button>
         </div>
-          <!-- ResetContainer End -->
+        <!-- ResetContainer End -->
     </main>
 
     <script src="script.js"></script>

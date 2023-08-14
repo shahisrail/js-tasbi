@@ -10,11 +10,20 @@ const allahAkberDisplay = document.getElementById('allahAkberDisplay')
 const allahAkberIncrimentBtn = document.getElementById('allahAkberIncrimentBtn')
 const allahAkberDecrimentBtn = document.getElementById('allahAkberDecrimentBtn')
 
+
+const AllahummaDisplay = document.getElementById('AllahummaDisplay')
+const AllahummaIncrimentBtn = document.getElementById('AllahummaIncrimentBtn')
+const AllahummaDecrimentBtn = document.getElementById('AllahummaDecrimentBtn')
+
+
+
 const resetBtn = document.getElementById('resetBtn')
 
 let subhanAllahInitialValue = 0;
 let alhamdulillahInitialValue = 0;
 let allahAKberInitialValue = 0;
+let AstaghfirullahInitialValue = 0;
+let AllahummaInitialValue = 0;
 
 subhanAllahIncrimentBtn.addEventListener('click', function () {
 
@@ -84,14 +93,53 @@ allahAkberDecrimentBtn.addEventListener('click', function () {
 
 })
 
+AstaghfirullahIncrimentBtn.addEventListener('click', function () {
 
-resetBtn.addEventListener('click',function(){
+    AstaghfirullahInitialValue += 1
+    AstaghfirullahDisplay.innerText = AstaghfirullahInitialValue
+
+})
+
+AstaghfirullahDecrimentBtn.addEventListener('click', function () {
+    if (AstaghfirullahInitialValue === 0) {
+        return alert('You cant added nagetive value')
+    }
+    AstaghfirullahInitialValue -= 1
+    AstaghfirullahDisplay.innerText = AstaghfirullahInitialValue
+})
+
+AllahummaIncrimentBtn.addEventListener('click', function () {
+   
+   
+    if (AllahummaInitialValue === 7) {
+        return alert("Allahumma Complete. Please Fillup anoter one")
+    }
+   
+    AllahummaInitialValue += 1
+   AllahummaDisplay.innerText = AllahummaInitialValue
+})
+
+AllahummaDecrimentBtn.addEventListener('click', function () {
+    if (AllahummaInitialValue === 0) {
+        return alert('You cant added nagetive value')
+    }
+    AllahummaInitialValue -= 1
+    AllahummaDisplay.innerText = AllahummaInitialValue
+})
+
+resetBtn.addEventListener('click', function () {
 
     subhanAllahDisplay.innerText = 0
     alhamdulillahDisplay.innerText = 0
     allahAkberDisplay.innerText = 0
+    AstaghfirullahDisplay.innerText = 0
+    AllahummaDisplay.innerText = 0;
+
     subhanAllahInitialValue = 0
     alhamdulillahInitialValue = 0;
     allahAKberInitialValue = 0;
+    AstaghfirullahInitialValue = 0;
+    AllahummaInitialValue = 0;
+
 
 })
